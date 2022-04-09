@@ -1,15 +1,16 @@
 body {
     display: flex;
-    background-color: #30336b;
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .sidebar {
-    max-height: 100vh;
-    max-width: 35vw;
+    color: white;
+    height: 100vh;
+    position: relative;
+    text-align: center;
 }
 
 .sidebar > img {
@@ -17,13 +18,28 @@ body {
 }
 
 .logo {
+    font-family: "Beau Rivage", cursive;
+    font-size: 5rem;
     position: absolute;
+    padding: 0.5rem 0;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    top: 50%;
-    right: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
 }
 
 .credit {
+    /* width: 25rem; */
+    font-size: 0.7rem;
     position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    /* text-decoration: none; */
+    color: white;
 }
