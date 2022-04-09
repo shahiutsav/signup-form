@@ -1,4 +1,29 @@
 body {
+    display: flex;
     background-color: #30336b;
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.sidebar {
+    max-height: 100vh;
+    max-width: 35vw;
+}
+
+.sidebar > img {
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 50%;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
 }
