@@ -31,7 +31,6 @@ body {
 }
 
 .credit {
-    /* width: 25rem; */
     font-size: 0.7rem;
     position: absolute;
     bottom: 0;
@@ -40,6 +39,80 @@ body {
 }
 
 a {
-    /* text-decoration: none; */
     color: white;
+}
+
+.main-content {
+    width: 40vw;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    font-weight: 700;
+}
+
+.main-content > p + p {
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+.form-only {
+    /* background-color: #686de0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 10px 10px #888888;
+    padding: 1rem;
+}
+
+.form-only div {
+    display: grid;
+}
+
+label {
+    font-size: calc(5px + 0.25rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 15rem;
+    padding: 5px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none !important;
+    border: 1px solid #686de0;
+}
+
+.btn-submit {
+    margin-top: 2rem;
+    background-color: #596d48;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.account-check > a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #596d48;
+}
+
+.error:invalid {
+    outline: none !important;
+    content: "Password do not match";
+    border: 1px solid #b33939;
 }
